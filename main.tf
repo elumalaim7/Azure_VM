@@ -1,5 +1,13 @@
 provider "azurerm" {
   version = "1.38.0"
+
+  subscription_id = var.subscriptionID
+  client_id       = var.clientID
+  client_secret   = var.clientSecret
+  tenant_id       = var.tenantID
+
+  features {}
+
 }
 
 #create resource group
