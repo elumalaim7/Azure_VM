@@ -1,0 +1,10 @@
+{
+	"records": [
+		{
+			"key": "allowed-terraform-version",
+			"source": "./allowed-terraform-version.sentinel",
+			"sourceSum": "",
+			"dest": "/Volumes/Virtual/terraform/Azure/Azure_VM/allowed-terraform-version.sentinel"
+		}
+	]
+}
