@@ -6,8 +6,6 @@ provider "azurerm" {
   client_secret   = var.clientSecret
   tenant_id       = var.tenantID
 
-  features {}
-
 }
 
 #create resource group
