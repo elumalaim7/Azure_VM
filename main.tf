@@ -4,19 +4,19 @@ provider "azurerm" {
 
 #create resource group
 resource "azurerm_resource_group" "rg" {
-    name     = "rg-MyFirstTerraform"
-    location = "southindia"
-    tags      = {
-      Environment = "Terraform Demo"
-    }
+  name     = "rg-MyFirstTerraform"
+  location = "southindia"
+  tags = {
+    Environment = "Terraform Demo"
+  }
 }
 
 #Create virtual network
 resource "azurerm_virtual_network" "vnet" {
-    name                = "vnet-dev-southindia-001"
-    address_space       = ["10.0.0.0/16"]
-    location            = "southindia"
-    resource_group_name = azurerm_resource_group.rg.name
+  name                = "vnet-dev-southindia-001"
+  address_space       = ["10.0.0.0/16"]
+  location            = "southindia"
+  resource_group_name = azurerm_resource_group.rg.name
 }
 
 # Create subnet
