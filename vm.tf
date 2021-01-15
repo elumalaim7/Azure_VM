@@ -77,6 +77,7 @@ resource "azurerm_virtual_machine" "vm" {
   resource_group_name   = azurerm_resource_group.rg.name
   network_interface_ids = [azurerm_network_interface.nic.id]
   vm_size               = "Standard_B1s"
+}
 
   storage_os_disk {
     name              = "stvmpmvmterraformos"
