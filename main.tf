@@ -8,6 +8,7 @@ provider "azurerm" {
 
 }
 
+
 #create resource group
 resource "azurerm_resource_group" "rg" {
   name     = "rg-MyFirstTerraform"
